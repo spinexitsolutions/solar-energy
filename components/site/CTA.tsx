@@ -33,7 +33,7 @@ export default function CTA({ settings }: { settings: Settings }) {
         <div className="relative">
           <p className="eyebrow text-white/60">Free site survey · No obligation</p>
           <h2 className="display mx-auto mt-6 max-w-5xl text-[13vw] md:text-8xl">
-            Let the sun pay <span className="serif-i">your bills.</span>
+            Let the sun pay <span className="sun-text">your bills.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-lg text-white/70">
             Book a 20-minute consultation. We’ll design your system, file your subsidy and have you generating in 30 days.

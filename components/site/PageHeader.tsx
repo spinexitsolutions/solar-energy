@@ -24,7 +24,7 @@ export default function PageHeader({
         {done && (
           <h1 className="display mt-6 max-w-5xl text-[13vw] md:text-8xl">
             <SplitReveal text={title} />{" "}
-            {highlight && <SplitReveal text={highlight} delay={0.15} wordClassName={() => "serif-i sun-text"} />}
+            {highlight && <SplitReveal text={highlight} delay={0.15} wordClassName={() => "sun-text"} />}
           </h1>
         )}
         {subtitle && (

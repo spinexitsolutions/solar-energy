@@ -108,7 +108,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
             <h2 className="display mt-6 text-5xl md:text-7xl">
               <SplitReveal text="See what the" />
               <br />
-              <SplitReveal text="sun owes you." delay={0.15} wordClassName={(w) => (w === "owes" || w === "you." ? "serif-i sun-text" : "")} />
+              <SplitReveal text="sun owes you." delay={0.15} wordClassName={(w) => (w === "owes" || w === "you." ? "sun-text" : "")} />
             </h2>
           </div>
           <p className="max-w-md text-lg text-muted md:justify-self-end">
@@ -142,7 +142,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
             </div>
 
             <p className="eyebrow mt-10 text-white/50">Average monthly electricity bill</p>
-            <p className="mt-2 text-6xl font-semibold tracking-[-0.05em] md:text-8xl">
+            <p className="display-n mt-2 text-[3.4rem] leading-none md:text-8xl">
               <Num value={bill} format={inr} />
             </p>
             <input

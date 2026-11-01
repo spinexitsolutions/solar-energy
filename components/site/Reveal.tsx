@@ -74,13 +74,19 @@ export function SplitReveal({
 
 export function SectionLabel({ index, children, dark }: { index?: string; children: ReactNode; dark?: boolean }) {
   return (
-    <div className={`eyebrow flex items-center gap-3 ${dark ? "text-white/60" : "text-muted"}`}>
-      <span className="relative flex h-2 w-2">
-        <span className="absolute inset-0 rounded-full sun-bg animate-ping opacity-60" />
-        <span className="relative h-2 w-2 rounded-full sun-bg" />
+    <motion.div
+      initial={{ opacity: 0, x: -12 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease }}
+      className={`inline-flex items-center gap-2.5 rounded-full py-1 pl-1 pr-3.5 text-[13px] font-medium ring-1 ${
+        dark ? "bg-white/[0.04] text-white/80 ring-white/10" : "bg-white/60 text-ink/80 ring-ink/[0.08]"
+      }`}
+    >
+      <span className="grid h-6 min-w-6 place-items-center rounded-full sun-bg px-1.5 text-[11px] font-semibold tabular-nums text-[#1a0d00]">
+        {index ?? "●"}
       </span>
-      {index && <span className={dark ? "text-white/40" : "text-ink/40"}>{index}</span>}
-      <span>{children}</span>
-    </div>
+      {children}
+    </motion.div>
   );
 }

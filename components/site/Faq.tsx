@@ -14,7 +14,7 @@ export default function Faq({ faqs }: { faqs: FaqT[] }) {
         <h2 className="display mt-6 text-5xl md:text-6xl">
           <SplitReveal text="Questions," />
           <br />
-          <SplitReveal text="answered." delay={0.1} wordClassName={() => "serif-i sun-text"} />
+          <SplitReveal text="answered." delay={0.1} wordClassName={() => "sun-text"} />
         </h2>
         <p className="mt-5 max-w-sm text-muted">Can’t find what you’re looking for? Our solar advisors reply within minutes on WhatsApp.</p>
       </div>

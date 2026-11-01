@@ -87,7 +87,7 @@ export default function SettingsForm({ settings }: { settings: Settings }) {
             >
               <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full opacity-80 blur-2xl" style={{ background: `radial-gradient(circle, ${s.accent2}, ${s.accent} 50%, transparent 70%)` }} />
               <div className="relative">
-                <p className="text-3xl font-semibold tracking-[-0.04em]">Your roof, <span className="serif-i sun-text">a power plant.</span></p>
+                <p className="text-3xl font-semibold tracking-[-0.04em]">Your roof, <span className="sun-text">a power plant.</span></p>
                 <span className="btn btn-sun mt-3 !py-2 text-sm">Get a quote</span>
               </div>
             </div>

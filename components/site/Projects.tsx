@@ -31,7 +31,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
           <div>
             <SectionLabel index="04">Selected work</SectionLabel>
             <h2 className="display mt-5 text-5xl md:text-7xl">
-              Proof, <span className="serif-i sun-text">installed.</span>
+              Proof, <span className="sun-text">installed.</span>
             </h2>
           </div>
           <Link href="/projects" className="btn btn-ghost hidden !py-3 text-sm md:inline-flex">
@@ -53,7 +53,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
               </div>
               <div className="absolute inset-x-0 bottom-0 p-5 text-white md:p-7">
                 <p className="flex items-center gap-1.5 text-sm text-white/70"><MapPin className="h-3.5 w-3.5" />{p.location}</p>
-                <h3 className="mt-1 text-2xl font-semibold tracking-[-0.03em] md:text-3xl">{p.title}</h3>
+                <h3 className="display-n mt-1 text-2xl md:text-3xl">{p.title}</h3>
                 <div className="mt-4 flex gap-2">
                   <span className="rounded-full bg-white/15 px-3 py-1.5 text-sm backdrop-blur">{p.capacity}</span>
                   <span className="rounded-full sun-bg px-3 py-1.5 text-sm font-medium text-[#1a0d00]">{p.savings}</span>

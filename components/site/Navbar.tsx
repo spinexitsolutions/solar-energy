@@ -92,7 +92,7 @@ export default function Navbar({ nav, settings }: { nav: NavLink[]; settings: Se
           <motion.div layout="position">
             <Link href="/" className="flex items-center gap-2.5 rounded-full py-1.5 pl-2 pr-3">
               <SunMark progress={progress} />
-              <span className="text-[15px] font-semibold tracking-tight">{settings.brandName}</span>
+              <span className="display-n text-[15px]">{settings.brandName}</span>
             </Link>
           </motion.div>
 
@@ -168,7 +168,7 @@ export default function Navbar({ nav, settings }: { nav: NavLink[]; settings: Se
           <motion.div layout="position" className="flex items-center justify-between p-1.5">
             <Link href="/" className="flex items-center gap-2.5 py-1 pl-2">
               <SunMark progress={progress} />
-              <span className="text-[15px] font-semibold tracking-tight">{settings.brandName}</span>
+              <span className="display-n text-[15px]">{settings.brandName}</span>
             </Link>
             <div className="flex items-center gap-1.5">
               {!open && (

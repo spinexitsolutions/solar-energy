@@ -12,7 +12,7 @@ export default function Packages({ packages }: { packages: Package[] }) {
         <div className="flex justify-center"><SectionLabel index="05">Packages</SectionLabel></div>
         <h2 className="display mx-auto mt-6 max-w-4xl text-5xl md:text-7xl">
           <SplitReveal text="Simple, honest" />{" "}
-          <SplitReveal text="pricing." delay={0.12} wordClassName={() => "serif-i sun-text"} />
+          <SplitReveal text="pricing." delay={0.12} wordClassName={() => "sun-text"} />
         </h2>
         <p className="mx-auto mt-5 max-w-lg text-lg text-muted">All-inclusive. No hidden costs. 0% EMI available on every plan.</p>
       </div>
@@ -37,9 +37,9 @@ export default function Packages({ packages }: { packages: Package[] }) {
               </>
             )}
             <p className={`eyebrow ${k.featured ? "text-white/50" : "text-muted"}`}>{k.capacity}</p>
-            <h3 className="mt-2 text-3xl font-semibold tracking-[-0.04em]">{k.name}</h3>
+            <h3 className="display-n mt-2 text-3xl">{k.name}</h3>
             <p className={`mt-1 text-sm ${k.featured ? "text-white/60" : "text-muted"}`}>{k.ideal}</p>
-            <p className="mt-8 text-5xl font-semibold tracking-[-0.05em]">{k.price}</p>
+            <p className="display-n mt-8 text-[2.6rem] leading-none">{k.price}</p>
             <p className={`mt-1 text-sm ${k.featured ? "sun-text" : "text-emerald-600"}`}>{k.priceNote}</p>
             <ul className="relative mt-8 flex-1 space-y-3">
               {k.features.map((f) => (

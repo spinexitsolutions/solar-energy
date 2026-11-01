@@ -34,7 +34,7 @@ export default function Stats({ stats }: { stats: Stat[] }) {
             transition={{ duration: 0.8, delay: i * 0.1 }}
           >
             <div className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 sun-bg transition-transform duration-700 group-hover:scale-x-100" />
-            <p className="whitespace-nowrap text-[2.1rem] font-semibold leading-none tracking-[-0.05em] sm:text-5xl lg:text-7xl">
+            <p className="display-n whitespace-nowrap text-[2rem] leading-none sm:text-5xl lg:text-7xl">
               <Counter stat={s} />
               <span className="sun-text">{s.suffix}</span>
             </p>

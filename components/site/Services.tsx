@@ -49,7 +49,7 @@ function StackCard({
             <span className="grid h-12 w-12 place-items-center rounded-2xl bg-paper text-ink md:h-14 md:w-14">
               <Icon name={s.icon} className="h-6 w-6" />
             </span>
-            <h3 className="mt-5 text-3xl font-semibold tracking-[-0.04em] md:mt-8 md:text-5xl">{s.title}</h3>
+            <h3 className="display-n mt-5 text-[1.7rem] leading-[1.02] md:mt-8 md:text-[2.6rem]">{s.title}</h3>
             <p className="mt-3 line-clamp-3 text-[15px] leading-relaxed text-muted md:mt-4 md:text-lg">{s.description}</p>
           </div>
           <div className="mt-4">
@@ -86,7 +86,7 @@ export default function Services({ services, heading = true }: { services: Servi
             <h2 className="display text-5xl md:text-7xl">
               <SplitReveal text="One partner." />
               <br />
-              <SplitReveal text="Every watt." delay={0.15} wordClassName={() => "serif-i sun-text"} />
+              <SplitReveal text="Every watt." delay={0.15} wordClassName={() => "sun-text"} />
             </h2>
             <p className="max-w-md text-lg text-muted md:justify-self-end">
               From a 2 kW home rooftop to a multi-megawatt plant — design, approvals, installation and lifetime care under one roof.

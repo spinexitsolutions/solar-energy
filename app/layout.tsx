@@ -1,16 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { Archivo, Onest } from "next/font/google";
 import { getDB } from "@/lib/db";
 import "./globals.css";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
-const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
-const instrument = Instrument_Serif({
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument",
-});
+const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo" });
+const sans = Onest({ subsets: ["latin"], variable: "--font-onest" });
 
 export const dynamic = "force-dynamic";
 
@@ -37,7 +31,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}
+      className={`${display.variable} ${sans.variable}`}
       style={{ ["--accent" as string]: settings.accent, ["--accent-2" as string]: settings.accent2 }}
     >
       <body className="font-sans min-h-dvh">{children}</body>

@@ -24,7 +24,7 @@ export default function Process({ steps }: { steps: Step[] }) {
           <div className="pt-16 md:pt-0">
             <SectionLabel index="03" dark>How it works</SectionLabel>
             <h2 className="display mt-5 text-[11vw] md:text-7xl">
-              Sunrise to <span className="serif-i sun-text">switch-on</span> in 30 days.
+              Sunrise to <span className="sun-text">switch-on</span> in 30 days.
             </h2>
             <div className="relative mx-auto mt-12 hidden max-w-[420px] md:block">
               <svg viewBox="0 0 400 215" className="w-full">
@@ -77,7 +77,7 @@ export default function Process({ steps }: { steps: Step[] }) {
                     <span className={`font-mono text-sm ${on ? "sun-text" : "text-white/40"}`}>0{i + 1}</span>
                     <div className="flex-1">
                       <div className="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 className="text-xl font-medium tracking-[-0.03em] md:text-3xl">{s.title}</h3>
+                        <h3 className="display-n text-lg md:text-2xl">{s.title}</h3>
                         <span className="eyebrow text-white/40">{s.duration}</span>
                       </div>
                       <motion.div
