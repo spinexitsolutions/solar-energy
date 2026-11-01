@@ -38,6 +38,14 @@ export const CMS: SectionSchema[] = [
     title: "Hero",
     description: "The first thing visitors see — headline, image and calls to action.",
     fields: [
+      {
+        key: "variant",
+        label: "Hero design",
+        type: "select",
+        options: ["sun", "cells", "eclipse", "bill", "stories"],
+        help: "sun = Drag the Sun · cells = Solar Cells · eclipse = Eclipse · bill = The Bill · stories = Project Stories",
+        span: 2,
+      },
       { key: "badge", label: "Announcement badge", type: "text", span: 2 },
       { key: "titleLine1", label: "Title line 1", type: "text" },
       { key: "titleLine2", label: "Title line 2 (muted)", type: "text" },
