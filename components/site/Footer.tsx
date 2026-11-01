@@ -20,7 +20,7 @@ export default function Footer({ settings, nav, services }: { settings: Settings
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <p className="text-3xl font-medium leading-tight tracking-[-0.035em] md:text-4xl">
-              Ready to make your roof <span className="sun-text">work for you?</span>
+              Ready to make your roof <span className="serif-i sun-text">work for you?</span>
             </p>
             <Link href="/contact" className="btn btn-sun mt-8">
               Book free consultation <ArrowUpRight className="h-4 w-4" />

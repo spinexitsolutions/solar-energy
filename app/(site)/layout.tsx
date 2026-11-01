@@ -9,13 +9,11 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
   const db = await getDB();
   return (
     <IntroProvider intro={db.intro}>
-      <div className="site">
       <SmoothScroll />
       <Navbar nav={db.nav} settings={db.settings} />
       <main className="overflow-x-clip">{children}</main>
       <Footer settings={db.settings} nav={db.nav} services={db.services} />
       <FloatingWhatsApp number={db.settings.whatsapp} />
-      </div>
     </IntroProvider>
   );
 }

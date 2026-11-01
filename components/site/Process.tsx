@@ -23,8 +23,8 @@ export default function Process({ steps }: { steps: Step[] }) {
         <div className="container-x relative grid items-center gap-8 md:grid-cols-2 md:gap-16">
           <div className="pt-16 md:pt-0">
             <SectionLabel index="03" dark>How it works</SectionLabel>
-            <h2 className="display mt-5 text-[15vw] md:text-[7rem]">
-              Sunrise to <span className="sun-text">switch-on</span> in 30 days.
+            <h2 className="display mt-5 text-[11vw] md:text-7xl">
+              Sunrise to <span className="serif-i sun-text">switch-on</span> in 30 days.
             </h2>
             <div className="relative mx-auto mt-12 hidden max-w-[420px] md:block">
               <svg viewBox="0 0 400 215" className="w-full">
@@ -71,13 +71,13 @@ export default function Process({ steps }: { steps: Step[] }) {
                   key={i}
                   animate={{ opacity: on ? 1 : i < active ? 0.35 : 0.25 }}
                   transition={{ duration: 0.5 }}
-                  className={`rounded-[4px] p-4 transition-colors duration-500 md:p-6 ${on ? "bg-white/[0.07] ring-1 ring-white/10" : ""}`}
+                  className={`rounded-3xl p-4 transition-colors duration-500 md:p-6 ${on ? "bg-white/[0.07] ring-1 ring-white/10" : ""}`}
                 >
                   <div className="flex items-baseline gap-4">
                     <span className={`font-mono text-sm ${on ? "sun-text" : "text-white/40"}`}>0{i + 1}</span>
                     <div className="flex-1">
                       <div className="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 className="display-n text-2xl md:text-4xl">{s.title}</h3>
+                        <h3 className="text-xl font-medium tracking-[-0.03em] md:text-3xl">{s.title}</h3>
                         <span className="eyebrow text-white/40">{s.duration}</span>
                       </div>
                       <motion.div

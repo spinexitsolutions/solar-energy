@@ -35,7 +35,6 @@ export type Hero = {
   ctaPrimary: string;
   ctaSecondary: string;
   badge: string;
-  variant: string; // "sun" | "cells" | "eclipse" | "bill" | "stories"
 };
 
 export type Statement = { text: string; image: string };

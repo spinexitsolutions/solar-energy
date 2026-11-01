@@ -23,7 +23,7 @@ function Counter({ stat }: { stat: Stat }) {
 export default function Stats({ stats }: { stats: Stat[] }) {
   return (
     <section className="container-x py-20 md:py-32">
-      <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[4px] bg-line ring-1 ring-line md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[2rem] bg-line ring-1 ring-line md:grid-cols-4">
         {stats.map((s, i) => (
           <motion.div
             key={i}
@@ -34,7 +34,7 @@ export default function Stats({ stats }: { stats: Stat[] }) {
             transition={{ duration: 0.8, delay: i * 0.1 }}
           >
             <div className="absolute inset-x-0 top-0 h-px origin-left scale-x-0 sun-bg transition-transform duration-700 group-hover:scale-x-100" />
-            <p className="display-n whitespace-nowrap text-[3.2rem] leading-none sm:text-6xl lg:text-[6.5rem]">
+            <p className="whitespace-nowrap text-[2.1rem] font-semibold leading-none tracking-[-0.05em] sm:text-5xl lg:text-7xl">
               <Counter stat={s} />
               <span className="sun-text">{s.suffix}</span>
             </p>

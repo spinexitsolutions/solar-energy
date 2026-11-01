@@ -13,13 +13,12 @@ import Faq from "@/components/site/Faq";
 import BlogPreview from "@/components/site/BlogPreview";
 import CTA from "@/components/site/CTA";
 
-export default async function Home({ searchParams }: { searchParams: Promise<{ hero?: string }> }) {
+export default async function Home() {
   const db = await getDB();
-  const { hero: heroPreview } = await searchParams;
   const s = db.sections;
   return (
     <>
-      <Hero hero={db.hero} projects={db.projects} stats={db.stats} variant={heroPreview} />
+      <Hero hero={db.hero} />
       {s.marquee && <Marquee items={db.partners} />}
       {s.statement && <Statement statement={db.statement} />}
       <Stats stats={db.stats} />

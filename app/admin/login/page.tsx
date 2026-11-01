@@ -17,7 +17,7 @@ export default async function LoginPage() {
         <div className="absolute inset-x-0 bottom-0 p-12 text-white">
           <p className="eyebrow text-white/60">{settings.brandName} OS</p>
           <p className="display mt-4 text-6xl">
-            Run your solar business <span className="sun-text">from one place.</span>
+            Run your solar business <span className="serif-i sun-text">from one place.</span>
           </p>
           <p className="mt-4 max-w-md text-white/60">Leads, pipeline, website content, blog and branding — all in one calm dashboard.</p>
         </div>

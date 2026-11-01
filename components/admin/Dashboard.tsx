@@ -61,7 +61,7 @@ export default function Dashboard({
       <div className="mb-8">
         <p className="text-sm text-muted">{new Date().toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long" })}</p>
         <h1 className="mt-1 text-3xl font-semibold tracking-[-0.04em] md:text-4xl">
-          {greet}, <span className="sun-text">{name}.</span>
+          {greet}, <span className="serif-i sun-text">{name}.</span>
         </h1>
       </div>
 

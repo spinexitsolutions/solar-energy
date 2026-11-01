@@ -97,7 +97,7 @@ export default function LeadForm({ defaultMessage = "" }: { defaultMessage?: str
                         key={t.id}
                         type="button"
                         onClick={() => set("propertyType", t.id)}
-                        className={`relative flex flex-col items-start gap-6 rounded-[4px] p-4 text-left ring-1 transition ${
+                        className={`relative flex flex-col items-start gap-6 rounded-2xl p-4 text-left ring-1 transition ${
                           on ? "bg-night text-white ring-night" : "bg-paper ring-ink/5 hover:ring-ink/20"
                         }`}
                       >

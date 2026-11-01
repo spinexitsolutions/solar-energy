@@ -37,9 +37,9 @@ export default function Testimonials({ items }: { items: Testimonial[] }) {
                 ))}
               </div>
               <p className="mt-6 max-w-5xl text-3xl font-medium leading-[1.15] tracking-[-0.035em] md:text-6xl">
-                <span className="sun-text">“</span>
+                <span className="serif-i sun-text">“</span>
                 {t.quote}
-                <span className="sun-text">”</span>
+                <span className="serif-i sun-text">”</span>
               </p>
               <footer className="mt-8 flex items-center gap-4">
                 <img src={t.avatar} alt={t.name} className="h-14 w-14 rounded-full object-cover ring-4 ring-white" />

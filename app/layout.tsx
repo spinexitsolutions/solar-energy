@@ -1,10 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Big_Shoulders, Familjen_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { getDB } from "@/lib/db";
 import "./globals.css";
 
-const display = Big_Shoulders({ subsets: ["latin"], axes: ["opsz"], variable: "--font-shoulders", adjustFontFallback: false });
-const sans = Familjen_Grotesk({ subsets: ["latin"], variable: "--font-familjen" });
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+const instrument = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument",
+});
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#f3f1ec",
+  themeColor: "#f6f5f1",
   width: "device-width",
   initialScale: 1,
 };
@@ -31,7 +37,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html
       lang="en"
-      className={`${display.variable} ${sans.variable}`}
+      className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}
       style={{ ["--accent" as string]: settings.accent, ["--accent-2" as string]: settings.accent2 }}
     >
       <body className="font-sans min-h-dvh">{children}</body>

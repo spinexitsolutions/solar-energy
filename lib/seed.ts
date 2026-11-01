@@ -119,7 +119,6 @@ export const seed: DB = {
     ctaPrimary: "Get free site survey",
     ctaSecondary: "Calculate savings",
     badge: "Up to ₹78,000 subsidy under PM Surya Ghar",
-    variant: "sun",
   },
   statement: {
     text: "Every hour, the sun delivers more energy to Earth than humanity uses in a year. We simply help your home keep some of it.",

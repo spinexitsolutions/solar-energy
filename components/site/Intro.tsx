@@ -134,7 +134,7 @@ function IntroOverlay({ intro }: { intro: IntroT }) {
           ))}
         </h1>
         <motion.p
-          className="mt-3 text-xl text-white/70 md:text-2xl"
+          className="serif-i mt-3 text-xl text-white/70 md:text-2xl"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.9 }}

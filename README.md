@@ -2,7 +2,7 @@
 
 A premium, mobile-first solar company website built with **Next.js 16 (App Router)**, **Tailwind CSS v4**, **Motion** (Framer Motion) and **Lenis** smooth scroll — plus a full admin studio where the entire site, leads and blog are managed.
 
-Design language: **"Solar Instrument"** — an engineered, editorial look: condensed uppercase display type (Big Shoulders Display) with Familjen Grotesk body, hairline grids, sharp corners, solid accent "marker" highlights and data read-outs. The warm sunrise palette can be re-coloured from the admin in one click.
+Design language: Apple-inspired calm (Geist + Instrument Serif italic accents, generous whitespace, glass surfaces) with a warm "sunrise" gradient that the admin can re-colour in one click.
 
 ## Quick start
 
@@ -20,8 +20,8 @@ npm run dev
 | Area | What's inside |
 | --- | --- |
 | **Intro animation** | Cinematic sunrise loader — horizon line draws, sun rises with irradiance counter, wordmark reveals, curtain lifts. Toggle, wording, duration and "once per visit" controlled from admin. |
-| **Navbar "Masthead"** | Full-width hairline grid bar with numbered index links (fill-sweep hover, sliding active bar), live clock + current kW readout, phone cell and solid quote block. Hides on scroll down, returns on scroll up, adapts to dark sections, scroll-progress hairline. Mobile: full-screen index menu with huge condensed links. |
-| **Hero "Drag the sun"** | Full-bleed photograph whose lighting follows the time of day. An instrument panel shows local time, sun elevation, live kW and money saved today; visitors drag the sun along a 05:00–20:00 ruler to watch dawn, noon, dusk and night. Masked condensed headline with outline line and marker-wipe highlight. |
+| **Navbar "Solar Island"** | Floating glass pill with scroll-progress sun ring, spring hover highlight, auto-compacts on scroll down, turns dark over dark sections. On mobile it morphs into a full menu sheet. |
+| **Hero** | Masked word-by-word headline, image card that expands to full-bleed on scroll, live-generation / savings / CO₂ glass widgets. |
 | **Scroll effects** | Word-by-word statement reveal, stacking service cards, sunrise-arc "How it works" timeline, pinned horizontal projects gallery, parallax CTA sun. |
 | **Savings calculator** | Home / Society / Business, bill slider → system size, panels, roof area, subsidy (PM Surya Ghar), net cost, payback, 25-yr savings, CO₂. Captures the estimate as a lead. |
 | **Other sections** | Partner marquee, animated stats, pricing packages, auto-playing testimonials, FAQ accordion, blog preview, final CTA, footer, floating WhatsApp. |
