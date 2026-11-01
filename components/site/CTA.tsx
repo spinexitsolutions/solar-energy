@@ -16,7 +16,7 @@ export default function CTA({ settings }: { settings: Settings }) {
       <motion.div
         style={{ scale }}
         data-nav="dark"
-        className="grain relative overflow-hidden rounded-[2rem] bg-night px-6 pb-16 pt-20 text-center text-white md:rounded-[3rem] md:px-16 md:pb-24 md:pt-32"
+        className="grain relative overflow-hidden rounded-[4px] bg-night px-6 pb-16 pt-20 text-center text-white md:rounded-[4px] md:px-16 md:pb-24 md:pt-32"
       >
         <motion.div
           style={{ y: sunY }}
@@ -32,7 +32,7 @@ export default function CTA({ settings }: { settings: Settings }) {
         </motion.div>
         <div className="relative">
           <p className="eyebrow text-white/60">Free site survey · No obligation</p>
-          <h2 className="display mx-auto mt-6 max-w-5xl text-[13vw] md:text-8xl">
+          <h2 className="display mx-auto mt-6 max-w-6xl text-[17vw] md:text-[9.5rem]">
             Let the sun pay <span className="sun-text">your bills.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-lg text-lg text-white/70">

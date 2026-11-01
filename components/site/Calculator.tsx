@@ -105,7 +105,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
         <div className="mb-10 grid gap-6 md:mb-14 md:grid-cols-2 md:items-end">
           <div>
             <SectionLabel index="02">Savings calculator</SectionLabel>
-            <h2 className="display mt-6 text-5xl md:text-7xl">
+            <h2 className="display mt-6 text-[3.6rem] md:text-[7.5rem]">
               <SplitReveal text="See what the" />
               <br />
               <SplitReveal text="sun owes you." delay={0.15} wordClassName={(w) => (w === "owes" || w === "you." ? "sun-text" : "")} />
@@ -117,7 +117,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
         </div>
       )}
 
-      <div data-nav="dark" className="relative overflow-hidden rounded-[2rem] bg-night text-white md:rounded-[2.75rem]">
+      <div data-nav="dark" className="relative overflow-hidden rounded-[4px] bg-night text-white md:rounded-[4px]">
         <div
           className="pointer-events-none absolute -top-1/2 left-1/2 h-[120%] w-[120%] -translate-x-1/2 opacity-40 blur-3xl"
           style={{ background: "radial-gradient(40% 40% at 50% 50%, var(--accent), transparent)" }}
@@ -142,7 +142,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
             </div>
 
             <p className="eyebrow mt-10 text-white/50">Average monthly electricity bill</p>
-            <p className="display-n mt-2 text-[3.4rem] leading-none md:text-8xl">
+            <p className="display-n mt-2 text-[4.6rem] leading-none md:text-[8.5rem]">
               <Num value={bill} format={inr} />
             </p>
             <input
@@ -167,7 +167,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
                 ["Panels", `${r.panels}`],
                 ["Roof area", `${r.area} ft²`],
               ].map(([k, v]) => (
-                <div key={k} className="rounded-2xl bg-white/[0.06] p-3 ring-1 ring-white/10 md:p-4">
+                <div key={k} className="rounded-[4px] bg-white/[0.06] p-3 ring-1 ring-white/10 md:p-4">
                   <p className="text-[11px] text-white/50 md:text-xs">{k}</p>
                   <p className="mt-1 text-lg font-semibold tracking-tight md:text-2xl">{v}</p>
                 </div>
@@ -176,7 +176,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
           </div>
 
           {/* results */}
-          <div className="rounded-[1.75rem] bg-white/[0.05] p-5 ring-1 ring-white/10 md:p-8">
+          <div className="rounded-[4px] bg-white/[0.05] p-5 ring-1 ring-white/10 md:p-8">
             <div className="relative">
               <SunArc pct={r.offset} />
               <div className="absolute inset-x-0 bottom-0 text-center">
@@ -187,7 +187,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-white/10">
+            <div className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-[4px] bg-white/10">
               {[
                 ["Monthly savings", <Num key="a" value={r.monthlySaving} format={inr} />],
                 ["Payback", <Num key="b" value={r.payback} format={(n) => `${n.toFixed(1)} yrs`} />],
@@ -201,7 +201,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
               ))}
             </div>
 
-            <div className="mt-4 flex items-center justify-between rounded-2xl sun-bg p-4 text-[#1a0d00]">
+            <div className="mt-4 flex items-center justify-between rounded-[4px] sun-bg p-4 text-[#1a0d00]">
               <div>
                 <p className="text-xs font-medium opacity-70">25-year savings</p>
                 <p className="text-2xl font-semibold tracking-tight md:text-3xl">
@@ -248,7 +248,7 @@ export default function Calculator({ config, standalone = false }: { config: Cal
                 </motion.form>
               )}
               {step === "done" && (
-                <motion.div key="done" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="mt-4 flex items-center gap-3 rounded-2xl bg-emerald-500/15 p-4 text-emerald-200 ring-1 ring-emerald-400/30">
+                <motion.div key="done" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="mt-4 flex items-center gap-3 rounded-[4px] bg-emerald-500/15 p-4 text-emerald-200 ring-1 ring-emerald-400/30">
                   <span className="grid h-8 w-8 place-items-center rounded-full bg-emerald-400 text-night"><Check className="h-4 w-4" strokeWidth={3} /></span>
                   <p className="text-sm">Got it! A solar advisor will call you within 2 working hours.</p>
                 </motion.div>

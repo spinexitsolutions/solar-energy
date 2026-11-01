@@ -11,7 +11,7 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
       <div className="flex items-end justify-between gap-6">
         <div>
           <SectionLabel index="08">Journal</SectionLabel>
-          <h2 className="display mt-5 text-5xl md:text-7xl">
+          <h2 className="display mt-5 text-[3.6rem] md:text-[7.5rem]">
             Learn the <span className="sun-text">light.</span>
           </h2>
         </div>

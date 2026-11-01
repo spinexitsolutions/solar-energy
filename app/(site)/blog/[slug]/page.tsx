@@ -32,12 +32,12 @@ export default async function PostPage({ params }: Props) {
             <ArrowLeft className="h-4 w-4" /> Journal
           </Link>
           <p className="eyebrow mt-8 text-muted">{post.category} · {fmtDate(post.date)} · {post.readTime} read</p>
-          <h1 className="display mt-4 text-5xl md:text-7xl">{post.title}</h1>
+          <h1 className="display mt-4 text-[3.4rem] md:text-[6.5rem]">{post.title}</h1>
           <p className="mt-6 text-xl text-muted">{post.excerpt}</p>
           <p className="mt-6 text-sm">By <span className="font-medium">{post.author}</span></p>
         </div>
         <div className="container-x mt-12">
-          <img src={post.cover} alt="" className="h-[45vh] w-full rounded-[2rem] object-cover md:h-[70vh]" />
+          <img src={post.cover} alt="" className="h-[45vh] w-full rounded-[4px] object-cover md:h-[70vh]" />
         </div>
         <div className="container-x max-w-3xl py-16">
           <Markdown source={post.content} />

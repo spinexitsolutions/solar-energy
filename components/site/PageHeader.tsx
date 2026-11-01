@@ -22,7 +22,7 @@ export default function PageHeader({
       <div className="container-x">
         <SectionLabel>{label}</SectionLabel>
         {done && (
-          <h1 className="display mt-6 max-w-5xl text-[13vw] md:text-8xl">
+          <h1 className="display mt-6 max-w-6xl text-[17vw] md:text-[9.5rem]">
             <SplitReveal text={title} />{" "}
             {highlight && <SplitReveal text={highlight} delay={0.15} wordClassName={() => "sun-text"} />}
           </h1>
@@ -45,7 +45,7 @@ export default function PageHeader({
           transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
           className="container-x mt-12 md:mt-16"
         >
-          <img src={image} alt="" className="h-[50vh] w-full rounded-[2rem] object-cover md:h-[70vh]" />
+          <img src={image} alt="" className="h-[50vh] w-full rounded-[4px] object-cover md:h-[70vh]" />
         </motion.div>
       )}
     </section>

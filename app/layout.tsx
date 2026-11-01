@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Onest } from "next/font/google";
+import { Big_Shoulders, Familjen_Grotesk } from "next/font/google";
 import { getDB } from "@/lib/db";
 import "./globals.css";
 
-const display = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo" });
-const sans = Onest({ subsets: ["latin"], variable: "--font-onest" });
+const display = Big_Shoulders({ subsets: ["latin"], axes: ["opsz"], variable: "--font-shoulders", adjustFontFallback: false });
+const sans = Familjen_Grotesk({ subsets: ["latin"], variable: "--font-familjen" });
 
 export const dynamic = "force-dynamic";
 
@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export const viewport: Viewport = {
-  themeColor: "#f6f5f1",
+  themeColor: "#f3f1ec",
   width: "device-width",
   initialScale: 1,
 };

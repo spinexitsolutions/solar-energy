@@ -10,7 +10,7 @@ export default function Packages({ packages }: { packages: Package[] }) {
     <section className="container-x py-20 md:py-32">
       <div className="text-center">
         <div className="flex justify-center"><SectionLabel index="05">Packages</SectionLabel></div>
-        <h2 className="display mx-auto mt-6 max-w-4xl text-5xl md:text-7xl">
+        <h2 className="display mx-auto mt-6 max-w-5xl text-[3.6rem] md:text-[7.5rem]">
           <SplitReveal text="Simple, honest" />{" "}
           <SplitReveal text="pricing." delay={0.12} wordClassName={() => "sun-text"} />
         </h2>
@@ -26,7 +26,7 @@ export default function Packages({ packages }: { packages: Package[] }) {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: i * 0.1 }}
             whileHover={{ y: -8 }}
-            className={`relative flex flex-col overflow-hidden rounded-[2rem] p-7 md:p-8 ${
+            className={`relative flex flex-col overflow-hidden rounded-[4px] p-7 md:p-8 ${
               k.featured ? "bg-night text-white shadow-[0_40px_80px_-30px_rgba(255,122,26,0.55)]" : "bg-white ring-1 ring-ink/5"
             }`}
           >
@@ -37,9 +37,9 @@ export default function Packages({ packages }: { packages: Package[] }) {
               </>
             )}
             <p className={`eyebrow ${k.featured ? "text-white/50" : "text-muted"}`}>{k.capacity}</p>
-            <h3 className="display-n mt-2 text-3xl">{k.name}</h3>
+            <h3 className="display-n mt-2 text-5xl">{k.name}</h3>
             <p className={`mt-1 text-sm ${k.featured ? "text-white/60" : "text-muted"}`}>{k.ideal}</p>
-            <p className="display-n mt-8 text-[2.6rem] leading-none">{k.price}</p>
+            <p className="display-n mt-8 text-[3.8rem] leading-none">{k.price}</p>
             <p className={`mt-1 text-sm ${k.featured ? "sun-text" : "text-emerald-600"}`}>{k.priceNote}</p>
             <ul className="relative mt-8 flex-1 space-y-3">
               {k.features.map((f) => (

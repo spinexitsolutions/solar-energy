@@ -45,7 +45,7 @@ export default async function AboutPage() {
           {a.team.map((m, i) => (
             <Reveal key={i} delay={i * 0.08}>
               <div className="group">
-                <div className="aspect-[3/4] overflow-hidden rounded-[1.75rem] bg-paper-2">
+                <div className="aspect-[3/4] overflow-hidden rounded-[4px] bg-paper-2">
                   <img src={m.photo} alt={m.name} className="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0" />
                 </div>
                 <p className="mt-4 font-semibold tracking-tight">{m.name}</p>

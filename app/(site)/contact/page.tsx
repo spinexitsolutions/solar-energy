@@ -34,7 +34,7 @@ export default async function ContactPage({ searchParams }: Props) {
           {items.map((it, i) => (
             <Reveal key={it.label} delay={i * 0.06}>
               <a href={it.href} target={it.href?.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="card flex items-start gap-4 p-5 transition hover:-translate-y-0.5">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl sun-bg text-[#1a0d00]">
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-[4px] sun-bg text-[#1a0d00]">
                   <it.icon className="h-5 w-5" strokeWidth={1.8} />
                 </span>
                 <span>
@@ -45,7 +45,7 @@ export default async function ContactPage({ searchParams }: Props) {
             </Reveal>
           ))}
           <Reveal delay={0.3}>
-            <div className="overflow-hidden rounded-[1.75rem] ring-1 ring-line">
+            <div className="overflow-hidden rounded-[4px] ring-1 ring-line">
               <iframe
                 title="Office location"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(s.address)}&output=embed`}

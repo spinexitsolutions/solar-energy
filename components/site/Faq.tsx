@@ -11,7 +11,7 @@ export default function Faq({ faqs }: { faqs: FaqT[] }) {
     <section className="container-x grid gap-10 py-20 md:grid-cols-[0.8fr_1.2fr] md:gap-20 md:py-32">
       <div className="md:sticky md:top-32 md:self-start">
         <SectionLabel index="07">FAQ</SectionLabel>
-        <h2 className="display mt-6 text-5xl md:text-6xl">
+        <h2 className="display mt-6 text-[3.6rem] md:text-[6.5rem]">
           <SplitReveal text="Questions," />
           <br />
           <SplitReveal text="answered." delay={0.1} wordClassName={() => "sun-text"} />

@@ -28,7 +28,7 @@ function StackCard({
     <div id={s.id} className="sticky top-0 flex h-dvh items-center justify-center" style={{ paddingTop: `calc(5.5rem + ${i * 14}px)` }}>
       <motion.article
         style={{ scale, filter }}
-        className="relative flex h-[min(76vh,640px)] w-full origin-top flex-col overflow-hidden rounded-[2rem] bg-white shadow-[0_30px_80px_-40px_rgba(0,0,0,0.45)] ring-1 ring-ink/5 md:grid md:grid-cols-2 md:rounded-[2.5rem]"
+        className="relative flex h-[min(76vh,640px)] w-full origin-top flex-col overflow-hidden rounded-[4px] bg-white shadow-[0_30px_80px_-40px_rgba(0,0,0,0.45)] ring-1 ring-ink/5 md:grid md:grid-cols-2 md:rounded-[4px]"
       >
         <div className="relative order-1 h-[40%] shrink-0 overflow-hidden md:order-2 md:h-full">
           <motion.img
@@ -46,10 +46,10 @@ function StackCard({
         </div>
         <div className="order-2 flex min-h-0 flex-1 flex-col justify-between p-6 md:order-1 md:p-12">
           <div>
-            <span className="grid h-12 w-12 place-items-center rounded-2xl bg-paper text-ink md:h-14 md:w-14">
+            <span className="grid h-12 w-12 place-items-center rounded-[4px] bg-paper text-ink md:h-14 md:w-14">
               <Icon name={s.icon} className="h-6 w-6" />
             </span>
-            <h3 className="display-n mt-5 text-[1.7rem] leading-[1.02] md:mt-8 md:text-[2.6rem]">{s.title}</h3>
+            <h3 className="display-n mt-5 text-[2.5rem] leading-[0.9] md:mt-8 md:text-[4.2rem]">{s.title}</h3>
             <p className="mt-3 line-clamp-3 text-[15px] leading-relaxed text-muted md:mt-4 md:text-lg">{s.description}</p>
           </div>
           <div className="mt-4">
@@ -83,7 +83,7 @@ export default function Services({ services, heading = true }: { services: Servi
         <div className="container-x">
           <SectionLabel index="01">Solutions</SectionLabel>
           <div className="mt-6 grid gap-6 md:grid-cols-2 md:items-end">
-            <h2 className="display text-5xl md:text-7xl">
+            <h2 className="display text-[3.6rem] md:text-[7.5rem]">
               <SplitReveal text="One partner." />
               <br />
               <SplitReveal text="Every watt." delay={0.15} wordClassName={() => "sun-text"} />

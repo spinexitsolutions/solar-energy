@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-onest), ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-display: var(--font-archivo), var(--font-onest), ui-sans-serif, sans-serif;
-  --font-mono: var(--font-onest), ui-sans-serif, sans-serif;
+  --font-sans: var(--font-familjen), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-shoulders), var(--font-familjen), ui-sans-serif, sans-serif;
+  --font-mono: var(--font-familjen), ui-sans-serif, sans-serif;
 
-  --color-paper: #f6f5f1;
-  --color-paper-2: #eeece6;
+  --color-paper: #f3f1ec;
+  --color-paper-2: #e9e6df;
   --color-ink: #0c0c0d;
   --color-ink-2: #1c1c1f;
   --color-night: #08080a;
@@ -61,6 +61,19 @@ html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-stopped { overflow: hidden; }
 
 @layer components {
+  /* public site skin: sharp, engineered corners */
+  .site {
+    --btn-r: 2px;
+    --card-r: 4px;
+  }
+  .site .btn {
+    text-transform: uppercase;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+  }
+  .hair { border-color: rgb(12 12 13 / 0.1); }
+
   .container-x {
     width: 100%;
     max-width: 1320px;
@@ -71,19 +84,29 @@ html.lenis, html.lenis body { height: auto; }
     .container-x { padding-inline: 2.5rem; }
   }
 
-  /* Expanded grotesk for all display type */
+  /* Condensed industrial grotesk — all display type is uppercase */
   .display {
     font-family: var(--font-display);
-    font-stretch: 125%;
-    font-weight: 750;
-    letter-spacing: -0.055em;
-    line-height: 0.92;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.012em;
+    line-height: 0.86;
   }
   .display-n {
     font-family: var(--font-display);
-    font-stretch: 112%;
-    font-weight: 650;
-    letter-spacing: -0.04em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 0.95;
+  }
+  /* marker highlight — solid accent block behind words */
+  .mark {
+    background: var(--accent);
+    color: var(--color-ink);
+    padding: 0 0.07em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
   .eyebrow {
     font-family: var(--font-sans);
@@ -95,10 +118,7 @@ html.lenis, html.lenis body { height: auto; }
   }
 
   .sun-text {
-    background: linear-gradient(100deg, var(--accent) 10%, var(--accent-2) 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--accent);
   }
   .sun-bg {
     background: linear-gradient(120deg, var(--accent), var(--accent-2));
@@ -120,7 +140,7 @@ html.lenis, html.lenis body { height: auto; }
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    border-radius: 999px;
+    border-radius: var(--btn-r, 999px);
     padding: 0.9rem 1.5rem;
     font-weight: 500;
     font-size: 0.95rem;
@@ -143,7 +163,7 @@ html.lenis, html.lenis body { height: auto; }
 
   .card {
     background: white;
-    border-radius: 1.75rem;
+    border-radius: var(--card-r, 1.75rem);
     box-shadow: 0 1px 0 rgb(12 12 13 / 0.04), 0 20px 50px -30px rgb(12 12 13 / 0.18);
   }
 
